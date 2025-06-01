@@ -109,89 +109,54 @@ So we built what we wish we had: a place to prep, ask, fail, learn, and grow —
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">MEET THE TEAM</h1>
         
-        <!-- Team Carousel -->
-        <div class="team-carousel">
-          <div class="team-container">
-            <div class="team-slide active">
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="images/ceo.png" alt="CEO">
-                </div>
-                <div class="member-info">
-                  <h3 class="member-name">Chiranjeev Agarwal</h3>
-                  <p class="member-role">Chief Executive Officer</p>
-                </div>
+        <!-- Team Grid -->
+        <div class="team-grid">
+          <div class="team-members">
+            <div class="team-member">
+              <div class="member-image">
+                <img src="images/ceo.png" alt="Chiranjeev Agarwal">
               </div>
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="images/cto.png" alt="CTO">
-                </div>
-                <div class="member-info">
-                  <h3 class="member-name">Aditya Prakash</h3>
-                  <p class="member-role">Chief Technology Officer</p>
-                </div>
-              </div>
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="images/md.png" alt="MD">
-                </div>
-                <div class="member-info">
-                  <h3 class="member-name">Sahil Khan</h3>
-                  <p class="member-role">Managing Director</p>
-                </div>
-              </div>
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="images/Academic Strategist.png" alt="Academic Strategist">
-                </div>
-                <div class="member-info">
-                  <h3 class="member-name">Academic Strategist</h3>
-                  <p class="member-role">Academic Strategy Lead</p>
-                </div>
+              <div class="member-info">
+                <h3 class="member-name">Chiranjeev Agarwal</h3>
+                <p class="member-role">Chief Executive Officer</p>
               </div>
             </div>
-            <div class="team-slide">
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="images/communitymanager.jpg" alt="Anishka Khurana">
-                </div>
-                <div class="member-info">
-                  <h3 class="member-name">Anishka Khurana</h3>
-                  <p class="member-role">Community Manager</p>
-                </div>
+            <div class="team-member">
+              <div class="member-image">
+                <img src="images/cto.png" alt="Aditya Prakash">
               </div>
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Rahul&backgroundColor=ffd5dc" alt="Rahul Verma">
-                </div>
-                <div class="member-info">
-                  <h3 class="member-name">Rahul Verma</h3>
-                  <p class="member-role">Technical Mentor</p>
-                </div>
-              </div>
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ananya&backgroundColor=ffdfbf" alt="Ananya Singh">
-                </div>
-                <div class="member-info">
-                  <h3 class="member-name">Ananya Singh</h3>
-                  <p class="member-role">Content Lead</p>
-                </div>
-              </div>
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Vikram&backgroundColor=b6e3f4" alt="Vikram Mehta">
-                </div>
-                <div class="member-info">
-                  <h3 class="member-name">Vikram Mehta</h3>
-                  <p class="member-role">Doubt Support Lead</p>
-                </div>
+              <div class="member-info">
+                <h3 class="member-name">Aditya Prakash</h3>
+                <p class="member-role">Chief Technology Officer</p>
               </div>
             </div>
-          </div>
-          <div class="team-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
+            <div class="team-member">
+              <div class="member-image">
+                <img src="images/md.png" alt="Sahil Khan">
+              </div>
+              <div class="member-info">
+                <h3 class="member-name">Sahil Khan</h3>
+                <p class="member-role">Managing Director</p>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="member-image">
+                <img src="images/Academic Strategist.png" alt="Academic Strategist">
+              </div>
+              <div class="member-info">
+                <h3 class="member-name">Academic Strategist</h3>
+                <p class="member-role">Academic Strategy Lead</p>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="member-image">
+                <img src="images/communitymanager.jpg" alt="Anishka Khurana">
+              </div>
+              <div class="member-info">
+                <h3 class="member-name">Anishka Khurana</h3>
+                <p class="member-role">Community Manager</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -259,46 +224,47 @@ So we built what we wish we had: a place to prep, ask, fail, learn, and grow —
     <section class="u-backlink u-clearfix u-grey-80"></section>
   
     <style>
-      .team-carousel {
+      .team-grid {
         max-width: 1200px;
         margin: 40px auto;
-        position: relative;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 20px;
       }
 
-      .team-container {
-        position: relative;
-        overflow: hidden;
-        padding: 20px 0;
-      }
-
-      .team-slide {
-        display: none;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        padding: 0 20px;
-      }
-
-      .team-slide.active {
+      .team-members {
         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 50px;
+        justify-items: center;
       }
 
       .team-member {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        padding: 25px;
         text-align: center;
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+        max-width: 320px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
       }
 
       .team-member:hover {
         transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.08);
       }
 
       .member-image {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         margin: 0 auto 20px;
         border-radius: 50%;
         overflow: hidden;
-        border: 3px solid #f1c50e;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 3px solid #0085ff;
+        box-shadow: 0 4px 15px rgba(0, 133, 255, 0.2);
       }
 
       .member-image img {
@@ -309,73 +275,53 @@ So we built what we wish we had: a place to prep, ask, fail, learn, and grow —
       }
 
       .team-member:hover .member-image img {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
 
       .member-info {
-        padding: 15px;
+        padding: 15px 0;
       }
 
       .member-name {
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.2em;
+        font-size: 1.3em;
         font-weight: 600;
         color: #fff;
-        margin: 0 0 5px;
+        margin: 0 0 8px;
       }
 
       .member-role {
         font-family: 'Montserrat', sans-serif;
-        font-size: 0.9em;
-        color: #f1c50e;
+        font-size: 1em;
+        color: #0085ff;
         margin: 0;
+        font-weight: 500;
       }
 
-      .team-dots {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        gap: 10px;
-      }
-
-      .dot {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.3);
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      .dot.active {
-        background: #f1c50e;
-      }
-
-      @media (max-width: 1200px) {
-        .team-slide {
-          grid-template-columns: repeat(3, 1fr);
+      @media (max-width: 768px) {
+        .team-members {
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 30px;
         }
-      }
 
-      @media (max-width: 992px) {
-        .team-slide {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        
-        .member-image {
-          width: 180px;
-          height: 180px;
-        }
-      }
-
-      @media (max-width: 576px) {
-        .team-slide {
-          grid-template-columns: 1fr;
-        }
-        
         .member-image {
           width: 160px;
           height: 160px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .team-members {
+          grid-template-columns: 1fr;
+        }
+
+        .member-image {
+          width: 140px;
+          height: 140px;
+        }
+
+        .team-member {
+          padding: 20px;
         }
       }
 
